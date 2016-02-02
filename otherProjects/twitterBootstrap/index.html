@@ -39,8 +39,8 @@
                 <li class="dropdown">
                     <a data-toggle="dropdown" class="dropdown-toggle" href="#">Panels <span class="badge">2</span><b class="caret"></b></a>
                     <ul role="menu" class="dropdown-menu">
-                        <li><a href="#">Panel with Header</a></li>
-                    <li><a href="#">Panel with Footer</a></li>
+                        <li><a href="#" class="scroll-link" data-id="header-panel">Panel with Header</a></li>
+                        <li><a href="#">Panel with Footer</a></li>
                     </ul>
                 </li>
             </ul>
@@ -66,6 +66,9 @@
     <div class="row container">
         <div class="col-sm-4 col-md-4 col-lg-6">
             <img class="img-rounded center-block" src="../../images/smhdphnsimg.jpg" alt="rounded img">
+                <a href="https://twitter.com/?lang=en" class="glyphicon glyphicon-cloud btn"></a>
+                <a href="https://www.facebook.com/" class="glyphicon glyphicon-thumbs-up btn"></a>
+                <a href="https://itunes.apple.com/us/app/sound/id466329326?mt=8" class="glyphicon glyphicon-phone btn"></a>
         </div>
         <div class="col-sm-4 col-md-4 col-lg-6 ">
             <div class="panel panel-body"  style="min-width: 250px;">
@@ -82,7 +85,6 @@
                 </div>
             </div>
         </div>
-        
         
         <div class="col-sm-4 col-md-4 col-lg-6">
             <div class="progress progress-striped">
@@ -103,14 +105,10 @@
         </div>
     </div>
     <div class="row container">
-        <div class="col-sm-4 col-md-4 col-lg-6">
-            <button type="submit" class="btn btn-default"><a href="https://twitter.com/?lang=en" class="glyphicon glyphicon-cloud"></a></button>
-            <button type="submit" class="btn btn-default"><a href="https://www.facebook.com/" class="glyphicon glyphicon-thumbs-up"></a></button>
-            <button type="submit" class="btn btn-default"><a href="https://itunes.apple.com/us/app/sound/id466329326?mt=8" class="glyphicon glyphicon-phone"></a></button>
-        </div>
+        
         <div class="col-sm-4 col-md-4 col-lg-6">
             <div class="panel panel-default">
-                <div class="panel-heading">This is a panel heading!</div>
+                <div id="header-panel" class="panel-heading page-section">This is a panel heading!</div>
                 <div class="panel-body">The panel heading introduces the panel. This text describes what has made the panel occur<br> <a href="#">Click here</a> for the satisfaction of clicking.</div>
             </div>
         </div>
