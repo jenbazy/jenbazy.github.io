@@ -23,26 +23,37 @@
             <a href="#" class="navbar-brand">ListenUp</a>
         </div>
         <!-- Collection of nav links, forms, and other content for toggling -->
-            <div id="navbarCollapse" class="collapse navbar-collapse">
-                <ul class="nav nav-pills">
-                    <li class="active"><a href="#">Home</a></li>
-                    <ul role="menu" class="nav nav-pills">
+        <div id="navbarCollapse" class="collapse navbar-collapse">
+            <ul class="nav navbar-nav nav-pills">
+                <li class="active"><a href="http://jenbazy.github.io/otherProjects/twitterBootstrap/index">Home</a></li>
+                
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Questions <span class="badge">4</span><b class="caret"></b></a>
+                    <ul role="menu" class="dropdown-menu">
                         <li><a href="http://jenbazy.github.io/otherProjects/twitterBootstrap/question1">Question 1</a></li>
-                        <li><a href="http://jenbazy.github.io/otherProjects/twitterBootstrap/question2">Question 2</a></li>
-                        <li><a href="http://jenbazy.github.io/otherProjects/twitterBootstrap/question3">Question 3</a></li>
-                        <li><a href="http://jenbazy.github.io/otherProjects/twitterBootstrap/question4">Question 4</a></li>
+                    <li><a href="http://jenbazy.github.io/otherProjects/twitterBootstrap/question2">Question 2</a></li>
+                    <li><a href="http://jenbazy.github.io/otherProjects/twitterBootstrap/question3">Question 3</a></li>
+                    <li><a href="http://jenbazy.github.io/otherProjects/twitterBootstrap/question4">Question 4</a></li>
                     </ul>
-                </ul>
-                <form role="search" class="navbar-form navbar-left">
-                    <div class="form-group">
-                        <input type="text" placeholder="Search" class="form-control">
-                    </div>
-                </form>
-                <ul class="nav navbar-nav navbar-right">
-                    <li><a href="#">Login</a></li>
-                </ul>
-            </div>
+                </li>
+                <li class="dropdown">
+                    <a data-toggle="dropdown" class="dropdown-toggle" href="#">Panels <span class="badge">2</span><b class="caret"></b></a>
+                    <ul role="menu" class="dropdown-menu">
+                        <li><a href="#">Panel with Header</a></li>
+                    <li><a href="#">Panel with Footer</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form role="search" class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input type="text" placeholder="Search" class="form-control">
+                </div>
+            
+                <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+            </form>
+        </div>
     </nav>
+    
     <div>
         <h1 class="text-center bg-success" style="border: 2px solid grey"><b>ListenUp</b>
             <span class="center-block"><small>a site for music lovers</small></span>
@@ -61,11 +72,11 @@
                 <div>
                     <div class="media-left">
                         <a href="#">
-                            <img src="../../images/avatar-tiny.jpg" class="media-object img-circle" alt="Sample Image">
+                            <img src="../../images/RedRose.jpg" class="media-object img-circle" alt="Sample Image">
                         </a>
                     </div>
                     <div class="media-left">
-                        <h4 class="media-heading">Jhon Carter <small><i>Posted on January 10, 2014</i></small></h4>
+                        <h4 class="media-heading">Sarah Carter <small><i>Posted on January 10, 2014</i></small></h4>
                         <p>My favourite website for up-to-date info on all things musical! I can always find amazing reviews on artists, albums and tech gear.</p>
                     </div>
                 </div>
@@ -74,29 +85,45 @@
         
         
         <div class="col-sm-4 col-md-4 col-lg-6">
-            <h1>hi</h1>
+            <div class="progress progress-striped">
+                <div class="progress-bar progress-bar-info" style="width: 20%">
+                    <span class="sr-only">20% Used</span>
+                </div>
+            </div>
+            <div class="progress progress-striped">
+                <div class="progress-bar progress-bar-success" style="width: 40%">
+                    <span class="sr-only">40% Used</span>
+                </div>
+            </div>
+            <div class="progress progress-striped">
+                <div class="progress-bar progress-bar-danger" style="width: 90%">
+                    <span class="sr-only">90% Used</span>
+                </div>
+            </div>
         </div>
     </div>
     <div class="row container">
         <div class="col-sm-4 col-md-4 col-lg-6">
-            <h1>hi</h1>
+            <button type="submit" class="btn btn-default"><a href="https://twitter.com/?lang=en" class="glyphicon glyphicon-cloud"></a></button>
+            <button type="submit" class="btn btn-default"><a href="https://www.facebook.com/" class="glyphicon glyphicon-thumbs-up"></a></button>
+            <button type="submit" class="btn btn-default"><a href="https://itunes.apple.com/us/app/sound/id466329326?mt=8" class="glyphicon glyphicon-phone"></a></button>
         </div>
-        <div class="col-sm-4 col-md-4 col-lg-6 bg-info">
-            Proin vitae nisi massa. Nullam eros justo, dignissim fermentum sem sit amet, rhoncus feugiat tortor. Quisque ut lobortis est, rutrum pharetra dui. Proin consequat elit vitae efficitur elementum. Duis faucibus accumsan metus, interdum vestibulum nisi lobortis vitae. Aenean pulvinar sodales nisl maximus lacinia. Curabitur at justo egestas, maximus ipsum nec, semper risus. Cras bibendum nec metus pulvinar maximus. Nullam est nibh, convallis nec tellus tincidunt, posuere feugiat nisl. Pellentesque id blandit neque.
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-6 bg-info">
-            <h1>hi</h1>
-        </div>
-    </div>
-        <div class="row container">
         <div class="col-sm-4 col-md-4 col-lg-6">
-            <h1>hi</h1>
+            <div class="panel panel-default">
+                <div class="panel-heading">This is a panel heading!</div>
+                <div class="panel-body">The panel heading introduces the panel. This text describes what has made the panel occur<br> <a href="#">Click here</a> for the satisfaction of clicking.</div>
+            </div>
         </div>
-        <div class="col-sm-4 col-md-4 col-lg-6 bg-info">
-            Proin vitae nisi massa. Nullam eros justo, dignissim fermentum sem sit amet, rhoncus feugiat tortor. Quisque ut lobortis est, rutrum pharetra dui. Proin consequat elit vitae efficitur elementum. Duis faucibus accumsan metus, interdum vestibulum nisi lobortis vitae. Aenean pulvinar sodales nisl maximus lacinia. Curabitur at justo egestas, maximus ipsum nec, semper risus. Cras bibendum nec metus pulvinar maximus. Nullam est nibh, convallis nec tellus tincidunt, posuere feugiat nisl. Pellentesque id blandit neque.
-        </div>
-        <div class="col-sm-4 col-md-4 col-lg-6 bg-info">
-            <h1>hi</h1>
+        <div class="col-sm-4 col-md-4 col-lg-6">
+            <div class="panel panel-default">
+                <div class="panel-body">This panel has no heading, but a footer with navigatory buttons.</div> 
+                <div class="panel-footer clearfix">
+                    <div class="pull-right">
+                        <a href="#" class="btn btn-primary">Learn More</a>
+                        <a href="#" class="btn btn-default">Don't Learn More</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
     
