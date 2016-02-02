@@ -3,36 +3,33 @@
 
 <meta charset="UTF-8">
 <title>Week 3-Question 4</title>
-<body>
-<script language=JavaScript>
-function writeTimesTable(timesTable, timesByStart, timesByEnd)
-{
-   for (;timesByStart <= timesByEnd; timesByStart++)
-   {
-      document.write(timesTable + " * " + timesByStart + " = " +
-         timesByStart * timesTable + "<br>");
-   }
-}
-    
-var timesTable;
-    
-while ( (timesTable = prompt("Enter the times table",-1)) != -1)
-{
-   while (isNaN(timesTable) == true)
-   {
-    timesTable = prompt(timesTable + " is not a valid number, please retry",-1);
 
-   }
-    
-   if (timesTable == -1)
-   {
-      break;
-   }
-    
-   document.write("<br>The " + timesTable + " times table<br>");
-   writeTimesTable(timesTable,1,12);
-    
-}
-</script>
+<body>
+    <script language=JavaScript>
+        function writeTimesTable(timesTable, timesByStart, timesByEnd) {
+            for (; timesByStart <= timesByEnd; timesByStart++) {
+                document.write(timesTable + " * " + timesByStart + " = " +
+                    timesByStart * timesTable + "<br>");
+            }
+        }
+
+        var timesTable;
+
+        while ((timesTable = prompt("Enter the times table, and -1 to finish", -1)) != -1) {
+            while (isNaN(timesTable) == true) {
+                timesTable = prompt(timesTable + " is not a valid number, please retry", -1);
+
+            }
+
+            if (timesTable == -1) {
+                break;
+            }
+
+            document.write("<br>The " + timesTable + " times table<br>");
+            writeTimesTable(timesTable, 1, 12);
+
+        }
+    </script>
 </body>
+
 </html>
