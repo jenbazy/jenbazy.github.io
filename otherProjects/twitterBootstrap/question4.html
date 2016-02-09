@@ -1,35 +1,85 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<meta charset="UTF-8">
-<title>Week 3-Question 4</title>
+<head>
+    <meta charset="UTF-8">
+    <title>Week 3-Question 4</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
 
 <body>
-    <script language=JavaScript>
-        function writeTimesTable(timesTable, timesByStart, timesByEnd) {
-            for (; timesByStart <= timesByEnd; timesByStart++) {
-                document.write(timesTable + " * " + timesByStart + " = " +
-                    timesByStart * timesTable + "<br>");
+    <div class="container">
+        <nav role="navigation" class="navbar navbar-inverse">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" data-target="#navbarCollapse" data-toggle="collapse" class="navbar-toggle">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+                <a href="#" class="navbar-brand">MainPage</a>
+            </div>
+            <!-- Collection of nav links, forms, and other content for toggling -->
+            <div id="navbarCollapse" class="collapse navbar-collapse">
+                <ul class="nav navbar-nav nav-pills">
+                    <li class="active"><a href="http://jenbazy.github.io/index">Home</a></li>
+                    <li>
+                        <a href="http://jenbazy.github.io/otherProjects/twitterBootstrap/carousel">Carousel</a>
+                    </li>
+                    <li>
+                        <a href="http://jenbazy.github.io/otherProjects/CodeAcademy/index">CodeAcademy Badges</a>
+                    </li>
+
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Week 3 Q&A<span class="badge">4</span><b class="caret"></b></a>
+                        <ul role="menu" class="dropdown-menu">
+                            <li><a href="http://jenbazy.github.io/otherProjects/twitterBootstrap/question1">Question 1</a></li>
+                            <li><a href="http://jenbazy.github.io/otherProjects/twitterBootstrap/question2">Question 2</a></li>
+                            <li><a href="http://jenbazy.github.io/otherProjects/twitterBootstrap/question3">Question 3</a></li>
+                            <li><a href="http://jenbazy.github.io/otherProjects/twitterBootstrap/question4">Question 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a data-toggle="dropdown" class="dropdown-toggle" href="#">Panels <span class="badge">2</span><b class="caret"></b></a>
+                        <ul role="menu" class="dropdown-menu">
+                            <li><a href="http://jenbazy.github.io/otherProjects/twitterBootstrap/index#header-panel">Panel with Header</a></li>
+                            <li><a href="http://jenbazy.github.io/otherProjects/twitterBootstrap/index#footer-panel">Panel with Footer</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <script language=JavaScript>
+            function writeTimesTable(timesTable, timesByStart, timesByEnd) {
+                for (; timesByStart <= timesByEnd; timesByStart++) {
+                    document.write(timesTable + " * " + timesByStart + " = " +
+                        timesByStart * timesTable + "<br>");
+                }
             }
-        }
 
-        var timesTable;
+            var timesTable;
 
-        while ((timesTable = prompt("Enter the times table, and -1 to finish", -1)) != -1) {
-            while (isNaN(timesTable) == true) {
-                timesTable = prompt(timesTable + " is not a valid number, please retry", -1);
+            while ((timesTable = prompt("Enter the times table, and -1 to finish", -1)) != -1) {
+                while (isNaN(timesTable) == true) {
+                    timesTable = prompt(timesTable + " is not a valid number, please retry", -1);
+
+                }
+
+                if (timesTable == -1) {
+                    break;
+                }
+
+                document.write("<br>The " + timesTable + " times table<br>");
+                writeTimesTable(timesTable, 1, 12);
 
             }
+        </script>
+    </div>
 
-            if (timesTable == -1) {
-                break;
-            }
-
-            document.write("<br>The " + timesTable + " times table<br>");
-            writeTimesTable(timesTable, 1, 12);
-
-        }
-    </script>
 </body>
 
 </html>
