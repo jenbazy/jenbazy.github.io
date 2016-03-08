@@ -45,7 +45,6 @@
         $(document).ready(function() {
 
         });
-
     </script>
     <div class="container">
         <ul class="nav nav-tabs" role="tablist">
@@ -402,7 +401,7 @@ function getTriangle(){
         </div>
     </div>
     <script>
-        $(document).ready(function () {
+        $(document).ready(function() {
             // code in the general function to allow question one to run
             //this function prints a triangle of hashtags
             function getTriangle() {
@@ -417,9 +416,10 @@ function getTriangle(){
                 }
                 $("#q1result").html(str);
             }
-            $("#q1Button").on("click", function () {
+            $("#q1Button").on("click", function() {
                 getTriangle();
             });
+
             function printFooBar() {
                 var print = "";
                 var number = Number(1);
@@ -436,8 +436,9 @@ function getTriangle(){
                 }
                 $("#q2result").html(print);
             }
-            $("#q2button").on("click", function () {
+            $("#q2button").on("click", function() {
                 printFooBar();
+
                 function printFooBar() {
                     var print = "";
                     var number = Number(1);
@@ -454,13 +455,14 @@ function getTriangle(){
                     }
                     $("#q2result").html(print);
                 }
-                $("#q2button").on("click", function () {
+                $("#q2button").on("click", function() {
                     printFooBar();
                 });
             });
             // CODE 3 START 
-            $("#q3button").on("click", function () {
+            $("#q3button").on("click", function() {
                 $("#q3result").html();
+
                 function chessBoard() {
                     var size = prompt("Please enter a Number");
                     var line = '';
@@ -478,11 +480,11 @@ function getTriangle(){
                     }
                     $("#q3result").html(print);
                 }
-                $("#q3button").on("click", function () {
+                $("#q3button").on("click", function() {
                     chessBoard();
                 });
             });
-            $("#q4button").on("click", function () {
+            $("#q4button").on("click", function() {
                 $("#q4result").html();
             });
             //put code under here. 
@@ -495,12 +497,12 @@ function getTriangle(){
                 }
                 return count;
             }
-            $("#q4button").on("click", function () {
+            $("#q4button").on("click", function() {
                 var userInput = prompt("");
                 var x = countBs(userInput);
                 $("#q4result").html(x);
             });
-            $("#q5button").on("click", function () {
+            $("#q5button").on("click", function() {
                 $("#q5result").html();
             });
             //put code under this line...               
@@ -513,13 +515,13 @@ function getTriangle(){
                 }
                 return count;
             }
-            $("#q5button").on("click", function () {
+            $("#q5button").on("click", function() {
                 var inputOne = prompt("");
                 var inputTwo = prompt("")
                 var t = countChar(inputOne, inputTwo)
                 $("#q5result").html(t);
             });
-            $("#q6button").on("click", function () {
+            $("#q6button").on("click", function() {
                 $("#q6result").html();
             });
             //put code under here. 
@@ -532,13 +534,13 @@ function getTriangle(){
                 }
                 return arr;
             }
-            $("#q6button").on("click", function () {
+            $("#q6button").on("click", function() {
                 var numberOne = prompt("Please enter the first number")
                 var numberTwo = prompt("Please enter the second number")
                 var rangeAnswer = range(numberOne, numberTwo);
                 $("#q6result").html("Answer is:" + rangeAnswer.join());
             });
-            $("#q7button").on("click", function () {
+            $("#q7button").on("click", function() {
                 $("#q7result").html();
             });
             //put code under here. 
@@ -549,13 +551,13 @@ function getTriangle(){
                 }
                 return sm;
             }
-            $("#q7button").on("click", function () {
+            $("#q7button").on("click", function() {
                 var startNum = prompt("Please enter the first number")
                 var endNum = prompt("Please enter the second number")
                 var sumTotal = sum(range(startNum, endNum))
                 $("#q7result").html("Answer is:" + " " + sumTotal);
             });
-            $("#q8button").on("click", function () {
+            $("#q8button").on("click", function() {
                 $("#q8result").html();
             });
             //put code under here. 
@@ -566,11 +568,11 @@ function getTriangle(){
                 }
                 return rev
             }
-            $("#q8button").on("click", function () {
+            $("#q8button").on("click", function() {
                 var list = ["Apples", "Bananas", "Oranges"]
                 $("#q8result").html("Answer is:" + " " + reverseArray(list));
             });
-            $("#q9button").on("click", function () {
+            $("#q9button").on("click", function() {
                 $("#q9result").html();
             });
             //put code under here. 
@@ -581,7 +583,7 @@ function getTriangle(){
                     array[array.length - 1 - i] = temp;
                 }
             }
-            $("#q9button").on("click", function () {
+            $("#q9button").on("click", function() {
                 var listA = ["a", "b", "c"];
                 var ans = reverseArray(listA)
                 $("#q9result").html("The reverse of a, b, c is" + " " + ans);
