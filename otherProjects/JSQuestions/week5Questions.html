@@ -471,7 +471,7 @@ function getTriangle(){
                             print = print + i + "<br/>";
                         }
                     }
-                    $("#q2result").html(print);
+                    $("#q2result").html("I replace multiples of '3' with 'foo', multiples of '5' with 'bar', and multiples of both with 'foobar'!" + "<br/>" + "<br/>" + print);
                 }
                 $("#q2button").on("click", function() {
                     printFooBar();
@@ -534,10 +534,10 @@ function getTriangle(){
                 return count;
             }
             $("#q5button").on("click", function() {
-                var inputOne = prompt("");
-                var inputTwo = prompt("")
+                var inputOne = prompt("Enter a word");
+                var inputTwo = prompt("Enter a letter within the word you would like me to count instances of!")
                 var t = countChar(inputOne, inputTwo)
-                $("#q5result").html(t);
+                $("#q5result").html("There are" + " " + t + " " + "'" + inputTwo + "'s");
             });
             $("#q6button").on("click", function() {
                 $("#q6result").html();
@@ -554,9 +554,9 @@ function getTriangle(){
             }
             $("#q6button").on("click", function() {
                 var numberOne = prompt("Please enter the first number")
-                var numberTwo = prompt("Please enter the second number")
+                var numberTwo = prompt("Please enter a second, higher number")
                 var rangeAnswer = range(numberOne, numberTwo);
-                $("#q6result").html("Answer is:" + rangeAnswer.join());
+                $("#q6result").html("The range of your numbers is" + " " + rangeAnswer.join());
             });
             $("#q7button").on("click", function() {
                 $("#q7result").html();
@@ -571,9 +571,9 @@ function getTriangle(){
             }
             $("#q7button").on("click", function() {
                 var startNum = prompt("Please enter the first number")
-                var endNum = prompt("Please enter the second number")
+                var endNum = prompt("Please enter a second, higher number")
                 var sumTotal = sum(range(startNum, endNum))
-                $("#q7result").html("Answer is:" + " " + sumTotal);
+                $("#q7result").html("All the numbers within your chosen range equal to" + " " + sumTotal);
             });
             $("#q8button").on("click", function() {
                 $("#q8result").html();
@@ -587,8 +587,8 @@ function getTriangle(){
                 return rev
             }
             $("#q8button").on("click", function() {
-                var list = ["Apples", "Bananas", "Oranges"]
-                $("#q8result").html("Answer is:" + " " + reverseArray(list));
+                var list = [" Apples", " Bananas", " Oranges"]
+                $("#q8result").html("The list is:" + " " + list + ". <br/>" + "The reverse order is:" + " " + reverseArray(list));
             });
             $("#q9button").on("click", function() {
                 $("#q9result").html();
@@ -602,9 +602,9 @@ function getTriangle(){
                 }
             }
             $("#q9button").on("click", function() {
-                var listA = ["a", "b", "c"];
+                var listA = [" a", " b", " c"];
                 var ans = reverseArray(listA)
-                $("#q9result").html("The reverse of a, b, c is" + " " + ans);
+                $("#q9result").html("The reverse of 'a, b, c' is" + " " + "'" + ans + "'");
             });
         });
     </script>
