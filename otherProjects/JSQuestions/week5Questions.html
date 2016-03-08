@@ -87,7 +87,7 @@ function getTriangle(){
             }
         str = str + < /br>
         }
-    $("#q1result").html(""I print out a triangle that looks like this:" + "</br>" + str);
+    $("#q1result").html(""I print out a triangle that looks like this:" + "<br/>" + str);
                 }
             
             $("#q1Button").on("click", function() {
@@ -100,8 +100,10 @@ function getTriangle(){
                         <button id="q1Button" class="btn btn-info" type="submit">Wanna see what I do?</button>
                     </div>
                     <div class="col-md-12">
-                        <!-- Results Div -->
-                        <div id="q1result"></div>
+                        <!-- Results Div displayed within a panel-->
+                        <div class="panel panel-default">
+                            <div class="panel-body" id="q1result"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -140,8 +142,9 @@ function getTriangle(){
                         <button id="q2button" class="btn btn-info" type="submit">Wanna see what I do?</button>
                     </div>
                     <div class="col-md-12">
-                        <!-- Results Div -->
-                        <div id="q2result">
+                        <!-- Results Div displayed within a panel-->
+                        <div class="panel panel-default">
+                            <div class="panel-body" id="q2result"></div>
                         </div>
                     </div>
                 </div>
@@ -186,8 +189,10 @@ function getTriangle(){
                         <button id="q3button" class="btn btn-info" type="submit">Wanna see what I do?</button>
                     </div>
                     <div class="col-md-12">
-                        <!-- Results Div -->
-                        <div id="q3result"></div>
+                        <!-- Results Div displayed within a panel-->
+                        <div class="panel panel-default">
+                            <div class="panel-body" id="q3result"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -224,9 +229,11 @@ function getTriangle(){
                         <!-- Button Div -->
                         <button id="q4button" class="btn btn-info" type="submit">Wanna see what I do?</button>
                     </div>
-                    <div class="col-md-12">
-                        <!-- Results Div -->
-                        <div id="q4result"></div>
+                   <div class="col-md-12">
+                        <!-- Results Div displayed within a panel-->
+                        <div class="panel panel-default">
+                            <div class="panel-body" id="q4result"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -261,8 +268,10 @@ function getTriangle(){
                         <button id="q5button" class="btn btn-info" type="submit">Wanna see what I do?</button>
                     </div>
                     <div class="col-md-12">
-                        <!-- Results Div -->
-                        <div id="q5result"></div>
+                        <!-- Results Div displayed within a panel-->
+                        <div class="panel panel-default">
+                            <div class="panel-body" id="q5result"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -297,8 +306,10 @@ function getTriangle(){
                         <button id="q6button" class="btn btn-info" type="submit">Wanna see what I do?</button>
                     </div>
                     <div class="col-md-12">
-                        <!-- Results Div -->
-                        <div id="q6result"></div>
+                        <!-- Results Div displayed within a panel-->
+                        <div class="panel panel-default">
+                            <div class="panel-body" id="q6result"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -329,9 +340,11 @@ function getTriangle(){
                         <!-- Button Div -->
                         <button id="q7button" class="btn btn-info" type="submit">Wanna see what I do?</button>
                     </div>
-                    <div class="col-md-12">
-                        <!-- Results Div -->
-                        <div id="q7result"></div>
+                   <div class="col-md-12">
+                        <!-- Results Div displayed within a panel-->
+                        <div class="panel panel-default">
+                            <div class="panel-body" id="q7result"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -362,8 +375,10 @@ function getTriangle(){
                         <button id="q8button" class="btn btn-info" type="submit">Wanna see what I do?</button>
                     </div>
                     <div class="col-md-12">
-                        <!-- Results Div -->
-                        <div id="q8result"></div>
+                        <!-- Results Div displayed within a panel-->
+                        <div class="panel panel-default">
+                            <div class="panel-body" id="q8result"></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -393,13 +408,16 @@ function getTriangle(){
                         <button id="q9button" class="btn btn-info" type="submit">Wanna see what I do?</button>
                     </div>
                     <div class="col-md-12">
-                        <!-- Results Div -->
-                        <div id="q9result"></div>
+                        <!-- Results Div displayed within a panel-->
+                        <div class="panel panel-default">
+                            <div class="panel-body" id="q9result"></div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    
     <script>
         $(document).ready(function() {
             // code in the general function to allow question one to run
@@ -414,7 +432,7 @@ function getTriangle(){
                     }
                     str = str + "</br>"
                 }
-                $("#q1result").html("I print out a triangle that looks like this:" + "</br>" + str);
+                $("#q1result").html("I print out a triangle that looks like this:" + "<br/>" + str);
             }
             $("#q1Button").on("click", function() {
                 getTriangle();
@@ -498,9 +516,9 @@ function getTriangle(){
                 return count;
             }
             $("#q4button").on("click", function() {
-                var userInput = prompt("");
+                var userInput = prompt("Enter an uppercase word and I will count the number of Bs!");
                 var x = countBs(userInput);
-                $("#q4result").html(x);
+                $("#q4result").html("The number of Bs is:" + " " + x);
             });
             $("#q5button").on("click", function() {
                 $("#q5result").html();
