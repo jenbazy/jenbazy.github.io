@@ -90,22 +90,22 @@
                         <pre>
                            <!--QUESTION ONE PRE CODE  -->
 
-function getTriangle(){
-    var str = "";
-    // the string goes here
-    for (var i = 1; i <= 6; i++){
-    //write i stars + <br/>
-    for(var j = 1; j <= i; j++){
-            str = str + "#"
-            }
-        str = str + < /br>
-        }
-    $("#q1result").html(""I print out a triangle that looks like this:" + "<br/>" + str);
+        function getTriangle(){
+            var str = "";
+            // the string goes here
+            for (var i = 1; i <= 6; i++){
+            //write i stars + <br/>
+            for(var j = 1; j <= i; j++){
+                    str = str + "#"
+                    }
+                str = str + < /br>
                 }
-            
-            $("#q1Button").on("click", function() {
-                    getTriangle();
-            });
+            $("#q1result").html(""I print out a triangle that looks like this:" + "<br/>" + str);
+                        }
+
+                    $("#q1Button").on("click", function() {
+                            getTriangle();
+                    });
                         </pre>
                     </div>
                     <div class="col-md-12">
@@ -126,29 +126,29 @@ function getTriangle(){
                         <pre>
 						   <!-- QUESTION TWO PRE CODE  -->
         function printFooBar() {
-        var print = "";
-        var number = Number(1);
-        for (i = Number(1); i <= 100; i++) {
+            var print = "";
+            var number = Number(1);
+            for (i = Number(1); i <= 100; i++) {
 
-          if (i % 3 == 0 && i % 5 == 0) {
-            print = print + "FooBar" + "<br/>";
-          } else if (i % 3 == 0) {
-            print = print + "Foo" + "<br/>";
-          } else if (i % 5 == 0) {
-            print = print + "Bar " + "<br/>";
-          } else {
-            print = print + i  +"<br/>";
+              if (i % 3 == 0 && i % 5 == 0) {
+                print = print + "FooBar" + "<br/>";
+              } else if (i % 3 == 0) {
+                print = print + "Foo" + "<br/>";
+              } else if (i % 5 == 0) {
+                print = print + "Bar " + "<br/>";
+              } else {
+                print = print + i  +"<br/>";
+              }
+
+            }
+            $("#q2result").html(print);
           }
 
-        }
-        $("#q2result").html(print);
-      }
+          $("#q2button").on("click", function() {
+            printFooBar();
 
-      $("#q2button").on("click", function() {
-        printFooBar();
-
-      });
-					 </pre>
+          });
+                         </pre>
                     </div>
                     <div class="col-md-12">
                         <!-- Button Div -->
@@ -242,7 +242,7 @@ function getTriangle(){
                         <!-- Button Div -->
                         <button id="q4button" class="btn btn-info" type="submit">Wanna see what I do?</button>
                     </div>
-                   <div class="col-md-12">
+                    <div class="col-md-12">
                         <!-- Results Div displayed within a panel-->
                         <div class="panel panel-default">
                             <div class="panel-body" id="q4result"></div>
@@ -353,7 +353,7 @@ function getTriangle(){
                         <!-- Button Div -->
                         <button id="q7button" class="btn btn-info" type="submit">Wanna see what I do?</button>
                     </div>
-                   <div class="col-md-12">
+                    <div class="col-md-12">
                         <!-- Results Div displayed within a panel-->
                         <div class="panel panel-default">
                             <div class="panel-body" id="q7result"></div>
@@ -430,7 +430,7 @@ function getTriangle(){
             </div>
         </div>
     </div>
-    
+
     <script>
         $(document).ready(function() {
             // code in the general function to allow question one to run

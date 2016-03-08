@@ -16,20 +16,16 @@ $(document).ready(function () {
 
     //focus event
     //chnages background to grey
-    $("input[type='text']").on("focus", function () {
-        log.append("User focussed on the input <br/>");
-        $(this).css("background-color", "grey");
-
-    })
-
-    //blur event
-    //chnages background to whilte
-    $("input[type='text']").on("blur", function () {
-        log.append("User moved away from the input <br/>");
-        $(this).css("background-color", "white");
-
-    })
-
+    $("#mySingleLineText").on("focus", function () {
+            log.append("User focussed on the input <br/>");
+            $(this).css("background-color", "grey");
+        })
+        //blur event
+        //chnages background to whilte
+        .on("blur", function () {
+            log.append("User moved away from the input <br/>");
+            $(this).css("background-color", "white");
+        });
     //mouseenter mouseleave envent
     //changes message on the button text
     $("button").on("mouseenter", function () {
@@ -45,9 +41,11 @@ $(document).ready(function () {
 
     //select event
     //writes some html on the screen depending on the selection
-    $("select").on("change", function () {
+    $("#mySelect").on("change", function () {
+        
+        var val = $(this).val();
         log.append("User changed selection <br/>");
-        var selInfo = $("#selectInfo"),
+        var selInfo = $("#mySelect"),
             choice = $(this).val();
 
         if (choice == "value1") {
