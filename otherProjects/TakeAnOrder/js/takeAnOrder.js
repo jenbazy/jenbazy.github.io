@@ -30,19 +30,18 @@ $(document).ready(function () {
     //changes message on the button text
     $("button").on("mouseenter", function () {
             log.append("User is hovering on button <br/>");
-            $(this).text("Give me $$$");
+            $(this).text("ORDER NOW!!!");
 
         })
         .on("mouseleave", function () {
             log.append("User is no longer hovering on the button <br/>");
-            $(this).text("Click me");
+            $(this).text("Click me!!");
 
         })
 
     //select event
     //writes some html on the screen depending on the selection
     $("#mySelect").on("change", function () {
-        
         var val = $(this).val();
         log.append("User changed selection <br/>");
         var selInfo = $("#mySelect"),

@@ -90,21 +90,23 @@
                         <pre>
                            <!--QUESTION ONE PRE CODE  -->
 
-        function getTriangle(){
-            var str = "";
+        function getTriangle(){ //create getTriangle function
+            var str = ""; //apply to variable string
             // the string goes here
             for (var i = 1; i <= 6; i++){
             //write i stars + <br/>
             for(var j = 1; j <= i; j++){
-                    str = str + "#"
+                    str = str + "#" //apply string plus a # sign
                     }
-                str = str + < /br>
+                str = str + < /br> //apply string plus a break
                 }
             $("#q1result").html(""I print out a triangle that looks like this:" + "<br/>" + str);
+            //print out a message explaining the output that follows
                         }
 
                     $("#q1Button").on("click", function() {
                             getTriangle();
+                            //call function getTriangle when button is clicked
                     });
                         </pre>
                     </div>
@@ -125,26 +127,31 @@
                     <div class="col-md-12">
                         <pre>
 						   <!-- QUESTION TWO PRE CODE  -->
-        function printFooBar() {
-            var print = "";
-            var number = Number(1);
-            for (i = Number(1); i <= 100; i++) {
+        function printFooBar() { //create the printFooBar function 
+            var print = ""; //Print the following 
+            var number = Number(1); //Assign number value to number var
+            for (i = Number(1); i <= 100; i++) {// from numbers 1 - 100
 
-              if (i % 3 == 0 && i % 5 == 0) {
-                print = print + "FooBar" + "<br/>";
-              } else if (i % 3 == 0) {
-                print = print + "Foo" + "<br/>";
-              } else if (i % 5 == 0) {
-                print = print + "Bar " + "<br/>";
+              if (i % 3 == 0 && i % 5 == 0) { //if number is a product of 3 & 5
+                print = print + "FooBar" + "<br/>"; 
+                //print foobar in place of number
+              } else if (i % 3 == 0) { 
+                //if number is a product of 3 
+                print = print + "Foo" + "<br/>"; 
+                //print foo in place of number
+              } else if (i % 5 == 0) { //if number is a product of 5 
+                print = print + "Bar " + "<br/>"; 
+                //print bar in place of number
               } else {
-                print = print + i  +"<br/>";
+                print = print + i  +"<br/>"; 
+                //if none of the above apply, just print the number
               }
 
             }
-            $("#q2result").html(print);
+            $("#q2result").html(print); //call the result and print
           }
 
-          $("#q2button").on("click", function() {
+          $("#q2button").on("click", function() { //call the printFooBar function when button is clicked
             printFooBar();
 
           });
@@ -168,28 +175,28 @@
                         <pre>
 						   <!-- QUESTION THREE PRE CODE -->
 						
-		  function chessBoard() {
-        var size = prompt("Please enter a Number");
-        var line = '';
-        var print = "";
-        var i = 0;
+		  function chessBoard() { //create function chessBoard
+        var size = prompt("Please enter a Number"); //ask the user to enter a number
+        var line = ''; //create variable line
+        var print = ""; //create print 
+        var i = 0; //assign i a 0 value
 
         for (i = 0; i < size / 2; i++) {
-          line = print + line + '# ';
+          line = print + line + '# '; //call variables line, print and a #
         }
 
-        for (i = 0; i < size; i++) {
-          if (i % 2 === 0) { 
-            print = print + (' ' + line) + "<br/>";
+        for (i = 0; i < size; i++) { 
+          if (i % 2 === 0) { //if i is an even row add a space
+            print = print + (' ' + line) + "<br/>"; //print a space plus line
           } else {
             print = print + (line) + "<br/>";
           }
         }
-        $("#q3result").html(print);
+        $("#q3result").html(print); //print the result
       }
 
 
-      $("#q3button").on("click", function() {
+      $("#q3button").on("click", function() { //call the chessBoard function on button click
 
         chessBoard();
       });
@@ -216,20 +223,20 @@
                     <!-- QUESTION FOUR PRE CODE -->
 				 
 				 function countBs(bString) {
-        var count = 0;
-        for (var i = 0; i < bString.length; i++) {
-          if (bString.charAt(i) == 'B') {
-            count = (count + 1);
+        var count = 0; //assign count 0
+        for (var i = 0; i < bString.length; i++) { //find bSting length and count it
+          if (bString.charAt(i) == 'B') { //find all the Bs in the bString
+            count = (count + 1); //count up from 0
           }
         }
-        return count;
+        return count; //return the amount of Bs
       }
 
 
-      $("#q4button").on("click", function() {
+      $("#q4button").on("click", function() { 
 
-        var userInput = prompt("");
-        var x = countBs(userInput);
+        var userInput = prompt(""); //apply a user prompt and fill the variable userInput with their input
+        var x = countBs(userInput); //create variable x which equals the amount of Bs in the userInput
 
         $("#q4result").html(x);
       });
