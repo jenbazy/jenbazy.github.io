@@ -25,6 +25,7 @@ $(document).ready(function () {
         } else if (partial == "seeDogsPage") {
 
         } else if (partial == "orderPage") {
+            $.get("partials/orderPage.html", function (data) {
 
         }
     }
