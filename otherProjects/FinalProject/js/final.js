@@ -16,9 +16,9 @@ $(document).ready(function () {
 
     function getPartial(partial) {
         if (partial == "homePage") {
-           //ajax get home.html
-            $.get("partials/home.html", function(data){
-            
+            //ajax get home.html
+            $.get("partials/home.html", function (data) {
+                $("#pageContent").html(data);
             })
         } else if (partial == "seeDogsPage") {
             alert("2");
@@ -26,6 +26,6 @@ $(document).ready(function () {
             alert("3");
         }
     }
-    
+
     getPartial("homePage");
 })
