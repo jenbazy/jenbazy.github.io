@@ -15,6 +15,17 @@ $(document).ready(function () {
 
 
     function getPartial(partial) {
-        alert(partial);
+        if (partial == "homePage") {
+           //ajax get home.html
+            $.get("partials/home.html", function(data){
+            
+            })
+        } else if (partial == "seeDogsPage") {
+            alert("2");
+        } else if (partial == "orderPage") {
+            alert("3");
+        }
     }
+    
+    getPartial("homePage");
 })
