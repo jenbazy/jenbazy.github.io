@@ -8,7 +8,6 @@ $(document).ready(function () {
         //add active class to clicked li
         $(this).addClass("active");
 
-        var page = $(this).attr("id");
-        alert(page);
+        
     })
 })
