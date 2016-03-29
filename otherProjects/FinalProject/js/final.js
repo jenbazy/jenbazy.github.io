@@ -26,6 +26,7 @@ $(document).ready(function () {
 
         } else if (partial == "orderPage") {
             $.get("partials/orderPage.html", function (data) {
+                $("#pageContent").html(data);
                 $("#myButton").one("mouseenter", function () {
                         $("#log").append("<br>You should definitely review");
                         $(this).text("Click to Review");
