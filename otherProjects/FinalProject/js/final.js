@@ -15,7 +15,7 @@ $(document).ready(function () {
 
 
     function getPartial(partial) {
-        if (partial == "homePage") {
+        if (partial == "home") {
             //ajax get home.html
             $.get("partials/home.html", function (data) {
                 $("#pageContent").html(data);
