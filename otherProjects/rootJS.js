@@ -1,5 +1,5 @@
 //get the file (replace with your own url)
-$.get("jenbazy.github.io/otherProjects/nav", function (data) {
+$.get("http://jenbazy.github.io/otherProjects/nav.html", function (data) {
 
     $(document).ready(function () {
 
