@@ -15,3 +15,19 @@ $.get("http://jenbazy.github.io/otherProjects/partials/nav.html", function (data
     });
 
 });
+$.get("http://jenbazy.github.io/otherProjects/partials/footer.html", function (data) {
+
+    $(document).ready(function () {
+
+        //check if this document has .container
+        var footCall = $(".footCall");
+
+        //if so add nav.html contents to the top
+        if (footCall) {
+            footCall.prepend(data)
+            footCall.fadeIn();
+        }
+
+    });
+
+});
