@@ -1,7 +1,7 @@
 .container{display: none;}
 
 .panel{
-    background-image: url(images/dark_embroidery.png);
+    background-image: url(../images/dark_embroidery.png);
     color: aliceblue;
 }
 
