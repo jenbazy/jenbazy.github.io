@@ -1,1 +1,6 @@
 .container{display: none;}
+
+.panel-default{
+    background-image: url(images/dark_embroidery.png);
+    color: aliceblue;
+}
