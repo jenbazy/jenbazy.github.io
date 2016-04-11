@@ -1,8 +1,7 @@
 .panel{
     background-image: url(../images/dark_embroidery.png);
     color: aliceblue;
-    margin-left: 0;
-    margin-right: 0;
+    min-height: 100px; 
 }
 
 .container{background-color:azure;}
