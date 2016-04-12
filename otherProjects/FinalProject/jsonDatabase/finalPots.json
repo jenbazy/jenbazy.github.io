@@ -1,55 +1,55 @@
 [{
   "type": "Cast Iron",
   "name": "Iron Cardinal",
-  "gender": "Male",
+  "color": "Red",
   "image": "images/ironCardinal.jpg",
   "comments": [{
     "username": "TeaObsessed",
-    "stars": 5,
+    "leaves": 5,
     "comment": "Loved this pot..."
   }, {
     "username": "OolongLover",
-    "stars": 1,
+    "leaves": 1,
     "comment": "Made my tea taste burnt"
   }, {
     "username": "DrankTea",
-    "stars": 4,
+    "leaves": 4,
     "comment": "What a pretty pot!"
   }]
 }, {
   "type": "Glass",
-  "name": "Mittens",
-  "gender": "Female",
-  "image": "images/cat5.jpg",
+  "name": "Through the Tea Glass",
+  "color": "Clear",
+  "image": "images/glassPot.jpg",
   "comments": [{
-    "username": "Jubeamese",
-    "stars": 4,
-    "comment": "So cute!!!"
+    "username": "RooiBOSS",
+    "leaves": 3,
+    "comment": "Okay but too FRAGILE!!"
   }, {
-    "username": "Pearbrai",
-    "stars": 5,
-    "comment": "Can i buy it?"
+    "username": "wavesOtea",
+    "leaves": 5,
+    "comment": "Use it every day"
   }, {
     "username": "FacePriceless",
-    "stars": 5,
-    "comment": "Seriously loved her!"
+    "leaves": 5,
+    "comment": "Love watching tea flowers bloom!"
   }]
 }, {
   "type": "Ceramic",
-  "name": "Robert",
-  "gender": "Unspecified",
-  "image": "images/cat6.jpg",
+  "name": "PolkaRoo",
+  "color": "Multi",
+  "image": "images/ceramicPot.jpg",
   "comments": [{
-    "username": "Ravenertu",
-    "stars": 2,
-    "comment": "Terrorized my dog!"
+    "username": "TeoOpedia",
+    "leaves": 2,
+    "comment": "Already chipped!"
   }, {
-    "username": "Roadbed",
-    "stars": 1,
-    "comment": "Meh"
+    "username": "LeavesAPlenty",
+    "leaves": 4,
+    "comment": "I get happy everytime I look at it!"
   }, {
-    "username": "Iconaler",
-    "stars": 5,
-    "comment": "Reminded me of my old cat"
+    "username": "Diffuser",
+    "leaves": 5,
+    "comment": "My favourite pot."
   }]
 }]

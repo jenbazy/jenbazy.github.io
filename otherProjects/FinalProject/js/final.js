@@ -28,26 +28,26 @@ $(document).ready(function () {
                     var html = "";
 
                     $.each(data, function (index, item) {
-                            html += '<div class="col-xs-12 col-md-4 jsonCat">' +
-                                '<div class="catName">' + item.name + '</div>' +
-                                '<div class="catType"><small>type </small>' + item.type + '</div>' +
-                                '<div class="catGender"><small>gender </small>' + item.gender + '</div>' +
-                                '<img class="catImage" src="' + item.image + '"/>' +
+                            html += '<div class="col-xs-12 col-md-4 jsonPot">' +
+                                '<div class="potName">' + item.name + '</div>' +
+                                '<div class="potType"><small>type </small>' + item.type + '</div>' +
+                                '<div class="potColor"><small>color </small>' + item.color + '</div>' +
+                                '<img class="potImage" src="' + item.image + '"/>' +
                                 //deleted commentsContainer
                                 '<div class="panel panel-default">' + //added
-                                '<div class="panel-heading">Renter Comments</div>'; //added
+                                '<div class="panel-heading">Buyer Reviews</div>'; //added
                             $.each(item.comments, function (ind, i) {
                                     html += '<div class="panel-body">' + //added
                                         '<div class="renterName"><small>' + i.username + '</small></div>' +
-                                        '<div class="renterComment">' + i.comment + '</div>' +
-                                        '<div class="renterStars">';
+                                        '<div class="buyerComment">' + i.comment + '</div>' +
+                                        '<div class="buyerLeaves">';
 
                                     for (var j = 1; j <= 5; j++) {
 
-                                        if (j <= i.stars) {
-                                            html += '<img src="images/fullStar.png"/>';
+                                        if (j <= i.leaves) {
+                                            html += '<span class="glyphicon glyphicon-leaf"></span>';
                                         } else {
-                                            html += '<img src="images/emptyStar.png"/>';
+                                            html += ' ';
                                         }
                                     }
                                     html += '</div>' + //end stars
@@ -66,7 +66,7 @@ $(document).ready(function () {
 
                     $("#pageContent").html(data);
 
-                    $('#startRentDate, #endRentDate').datepicker({});
+                    $('#deliveryDate').datepicker({});
 
                     $("#submitButton").on("click", function () {
 
