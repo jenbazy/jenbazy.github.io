@@ -138,37 +138,38 @@ $(document).ready(function () {
             });
 
         } else if (partial == "order2") { //ajax get order.html
-            $.get("partials/order2.html", function (data) {
+                $.get("partials/order2.html", function(data) {
 
-                    $("#pageContent").html(data);
+                        $("#pageContent").html(data);
 
-                    $('#startRentDate, #endRentDate').datepicker({});
+                        $('#startRentDate, #endRentDate').datepicker({});
 
-                    $("#submitButton").on("click", function () {
+                        $("#submitButton").on("click", function() {
 
-                            //get all empty inputs and select
-                            //add error class to div container
-                            $("input, select").filter(function () {
-                                return !this.value;
-                            }).closest("div").addClass("has-error");
+                                //get all empty inputs and select
+                                //add error class to div container
+                                $("input, select").filter(function() {
+                                    return !this.value;
+                                }).closest("div").addClass("has-error");
 
-                            //remove error class for non empty ones
-                            $("input, select").filter(function () {
-                                return this.value; //removed !
-                            }).closest("div").removeClass("has-error");
+                                //remove error class for non empty ones
+                                $("input, select").filter(function() {
+                                    return this.value; //removed !
+                                }).closest("div").removeClass("has-error");
 
-                            var errors = $(".has-error");
+                                var errors = $(".has-error");
 
-                            if (errors.length < 1) {
-                                //alert("no errors");
-                                sendConfirmation();
-                            }
+                                if (errors.length < 1) {
+                                    //alert("no errors");
+                                    sendConfirmation();
+                                }
 
-                        }) //click
-                }) //get
+                            }) //click
+                    }) //get
+            }
+            $("#pageContent").fadeIn();
+
         }
-        $("#pageContent").fadeIn();
-
     }
 
     getPartial("home");
