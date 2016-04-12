@@ -83,5 +83,8 @@ html,body{
 }
 .item{
     max-width: 50%;
-    
+}
+.item h1{
+    float:right;
+    font-size: 20px;
 }
