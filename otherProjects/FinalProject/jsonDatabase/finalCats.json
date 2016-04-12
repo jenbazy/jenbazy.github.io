@@ -2,7 +2,7 @@
     "type": "Calico",
     "name": "Paws",
     "gender": "Male",
-    "image": "images/dogs/dogs1.jpg",
+    "image": "../../FinalProject/images/dogs/dogs1.jpg",
     "comments": [{
         "username": "AboveAlpha",
         "stars": 5,
