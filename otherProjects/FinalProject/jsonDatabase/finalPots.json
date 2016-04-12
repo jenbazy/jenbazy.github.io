@@ -1,23 +1,23 @@
 [{
-  "type": "Calico",
-  "name": "Paws",
+  "type": "Cast Iron",
+  "name": "Iron Cardinal",
   "gender": "Male",
-  "image": "images/cat7.jpg",
+  "image": "images/ironCardinal.jpg",
   "comments": [{
-    "username": "AboveAlpha",
+    "username": "TeaObsessed",
     "stars": 5,
-    "comment": "Loved this cat..."
+    "comment": "Loved this pot..."
   }, {
-    "username": "BrashTaga",
+    "username": "OolongLover",
     "stars": 1,
-    "comment": "Destroyed my house"
+    "comment": "Made my tea taste burnt"
   }, {
-    "username": "Dragonakom",
+    "username": "DrankTea",
     "stars": 4,
-    "comment": "Pretty good kitty"
+    "comment": "What a pretty pot!"
   }]
 }, {
-  "type": "Tabby",
+  "type": "Glass",
   "name": "Mittens",
   "gender": "Female",
   "image": "images/cat5.jpg",
@@ -35,7 +35,7 @@
     "comment": "Seriously loved her!"
   }]
 }, {
-  "type": "Siamese",
+  "type": "Ceramic",
   "name": "Robert",
   "gender": "Unspecified",
   "image": "images/cat6.jpg",
