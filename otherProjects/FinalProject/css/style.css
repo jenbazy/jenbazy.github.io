@@ -85,6 +85,6 @@ html,body{
     max-width: 50%;
 }
 .item h1{
-    float:right;
+    margin-right: 150px;
     font-size: 20px;
 }
