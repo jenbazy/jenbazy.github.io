@@ -59,6 +59,8 @@ $(document).ready(function () {
                                 '</div>'; //col-md-4
                         }) //each cat
 
+                    $("#pageContent").html(html);
+
                 }) //getJSON
 
         } else if (partial == "orderPage") {
@@ -166,6 +168,25 @@ $(document).ready(function () {
                 }) //get
         }
         $("#pageContent").fadeIn();
+
+    }
+
+    function sendConfirmation() {
+        //make an object to record data for database;
+        var order = {};
+        //get all teh jquery objects
+        var formData = $("input, select");
+        //for each jquery object
+        formData.each(function () {
+            var id = $(this).attr("id"); //get the id of the element
+            order[id] = $(this).val(); //set the field and the value
+        })
+
+        alert("Sending to database " + JSON.stringify(order));
+        $("#successMsg").html("Order Received!<br/><br/>" +
+            order.catSelect + " will be delivered on " +
+            order.startRentDate +
+            "<img id='paws' src='images/catPaws.jpeg'>");
 
     }
 
