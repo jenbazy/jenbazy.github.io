@@ -22,8 +22,8 @@ $(document).ready(function () {
                 $("#pageContent").html(data);
                 $('.carousel').carousel();
             })
-        } else if (partial == "seeDogs") { //ajax get order.html
-            $.getJSON("jsonDatabase/finalCats.json", function (data) {
+        } else if (partial == "seePots") { //ajax get order.html
+            $.getJSON("jsonDatabase/finalPots.json", function (data) {
 
                     var html = "";
 
