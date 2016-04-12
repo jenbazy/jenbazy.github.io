@@ -19,8 +19,7 @@ $(document).ready(function () {
             //ajax get home.html
             $.get("partials/home.html", function (data) {
                 $("#pageContent").html(data);
-                
-
+                $('.carousel').carousel(); 
             })
         } else if (partial == "seeDogsPage") {
 
