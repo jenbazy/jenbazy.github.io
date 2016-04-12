@@ -2,7 +2,7 @@
     "type": "Calico",
     "name": "Paws",
     "gender": "Male",
-    "image": "images/dogs/dogs1.jpg",
+    "image": "../images/dogs/dogs1.jpg",
     "comments": [{
         "username": "AboveAlpha",
         "stars": 5,
@@ -20,7 +20,7 @@
     "type": "Tabby",
     "name": "Mittens",
     "gender": "Female",
-    "image": "images/dogs/dogs1.jpg",
+    "image": "../images/dogs/dogs1.jpg",
     "comments": [{
         "username": "Jubeamese",
         "stars": 4,
@@ -38,7 +38,7 @@
     "type": "Siamese",
     "name": "Robert",
     "gender": "Unspecified",
-    "image": "images/dogs/dogs1.jpg",
+    "image": "../images/dogs/dogs1.jpg",
     "comments": [{
         "username": "Ravenertu",
         "stars": 2,
