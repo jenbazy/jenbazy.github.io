@@ -81,3 +81,7 @@ div#orderForm{
 html,body{
     height: 100%
 }
+.item{
+    max-width: 50%;
+    
+}
