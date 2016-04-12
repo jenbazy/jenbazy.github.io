@@ -22,7 +22,7 @@ $(document).ready(function() {
                     $("#pageContent").html(data);
                     $('.carousel').carousel();
                 })
-            } else if (partial == "seeCatsPage") { //ajax models.html
+            } else if (partial == "seeDogs") { //ajax models.html
                 //paste the getJSON here; change the append id; change the file name
                 $.getJSON("jsonDatabase/finalCats.json", function(data) {
 
