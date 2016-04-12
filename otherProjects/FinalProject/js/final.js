@@ -22,46 +22,36 @@ $(document).ready(function() {
                     $("#pageContent").html(data);
                     $('.carousel').carousel();
                 })
-            } else if (partial == "seeDogs") { //ajax models.html
-                //paste the getJSON here; change the append id; change the file name
-                $.getJSON("jsonDatabase/finalCats.json", function(data) {
-
-                        var html = "";
-
-                        $.each(data, function(index, item) {
-                                html += '<div class="col-xs-12 col-md-4 jsonCat">' +
-                                    '<div class="catName">' + item.name + '</div>' +
-                                    '<div class="catType"><small>type </small>' + item.type + '</div>' +
-                                    '<div class="catGender"><small>gender </small>' + item.gender + '</div>' +
-                                    '<img class="catImage" src="' + item.image + '"/>' +
-                                    //deleted commentsContainer
-                                    '<div class="panel panel-default">' + //added
-                                    '<div class="panel-heading">Renter Comments</div>'; //added
-                                $.each(item.comments, function(ind, i) {
-                                        html += '<div class="panel-body">' + //added
-                                            '<div class="renterName"><small>' + i.username + '</small></div>' +
-                                            '<div class="renterComment">' + i.comment + '</div>' +
-                                            '<div class="renterStars">';
-
-                                        for (var j = 1; j <= 5; j++) {
-
-                                            if (j <= i.stars) {
-                                                html += '<img src="images/fullStar.png"/>';
-                                            } else {
-                                                html += '<img src="images/emptyStar.png"/>';
-                                            }
-                                        }
-                                        html += '</div>' + //end stars
-                                            '</div>'; //panel body
-                                    }) //each comment
-
-                                html += '</div>' + //panel
-                                    '</div>'; //col-md-4
-                            }) //each cat
+            } else if (partial == "seeDogs") { //ajax get order.html
+                $.get("partials/order2.html", function(data) {
 
                         $("#pageContent").html(data);
 
-                    }) //getJSON
+                        $('#startRentDate, #endRentDate').datepicker({});
+
+                        $("#submitButton").on("click", function() {
+
+                                //get all empty inputs and select
+                                //add error class to div container
+                                $("input, select").filter(function() {
+                                    return !this.value;
+                                }).closest("div").addClass("has-error");
+
+                                //remove error class for non empty ones
+                                $("input, select").filter(function() {
+                                    return this.value; //removed !
+                                }).closest("div").removeClass("has-error");
+
+                                var errors = $(".has-error");
+
+                                if (errors.length < 1) {
+                                    //alert("no errors");
+                                    sendConfirmation();
+                                }
+
+                            }) //click
+                    }) //get
+            }
             } else if (partial == "orderPage") { //ajax get order.html
                 $.get("partials/order2.html", function(data) {
 
