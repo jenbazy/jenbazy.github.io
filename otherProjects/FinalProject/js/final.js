@@ -116,6 +116,6 @@ $(document).ready(function() {
         } //sendConfirmation
 
         //begin the program, get the homepage
-        getPartial("homePage");
+        getPartial("home");
 
     })
