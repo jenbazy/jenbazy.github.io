@@ -59,7 +59,7 @@ $(document).ready(function() {
                                     '</div>'; //col-md-4
                             }) //each cat
 
-                        $("#pageContent").html(html);
+                        $("#pageContent").html(data);
 
                     }) //getJSON
             } else if (partial == "orderPage") { //ajax get order.html
