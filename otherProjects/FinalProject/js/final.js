@@ -66,7 +66,7 @@ $(document).ready(function () {
 
                     $("#pageContent").html(data);
 
-                    $('#startRentDate, #endRentDate').datepicker({});
+                    $('#deliveryDate').datepicker({});
 
                     $("#submitButton").on("click", function () {
 
