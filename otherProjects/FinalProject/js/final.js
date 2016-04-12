@@ -59,8 +59,6 @@ $(document).ready(function () {
                                 '</div>'; //col-md-4
                         }) //each cat
 
-                    $("#pageContent").html(html);
-
                 }) //getJSON
 
         } else if (partial == "orderPage") {
@@ -133,9 +131,9 @@ $(document).ready(function () {
                     $("#log").append("<br>You are interested in: " + userOrder.myCheckValues.join());
                     $("#inputLog").append("Your inputs were as follows: " + JSON.stringify(userOrder));
 
-                })
+                });
 
-            });
+            })
 
         } else if (partial == "order2") { //ajax get order.html
             $.get("partials/order2.html", function (data) {
