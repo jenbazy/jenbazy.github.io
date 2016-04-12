@@ -51,7 +51,6 @@ $(document).ready(function() {
 
                             }) //click
                     }) //get
-            }
             } else if (partial == "orderPage") { //ajax get order.html
                 $.get("partials/order2.html", function(data) {
 
