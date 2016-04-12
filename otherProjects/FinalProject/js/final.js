@@ -19,7 +19,7 @@ $(document).ready(function () {
             //ajax get home.html
             $.get("partials/home.html", function (data) {
                 $("#pageContent").html(data);
-                $('#myCarousel').carousel(); 
+                $('.container').carousel(); 
             })
         } else if (partial == "seeDogsPage") {
 
@@ -34,17 +34,6 @@ $(document).ready(function () {
                         $("#log").append("<br><br>We hope you love your item");
                         $(this).text("You're going to look great!");
                     });
-
-
-                //change the backgrund color on focus, blue
-                /*$("#mySingleLineText").on("focus", function () {
-                        $("#log").append("<br>What is your colour?");
-                        $(this).css("background-color", "#e6ffe6");
-                    })
-                    .on("blur", function () {
-                        $("#log").append("<br>What's your style?");
-                        $(this).css("background-color", "#FFF");
-                    });*/
 
                 $("#mySingleLineText").each(function () {
                     var Input = $(this);
