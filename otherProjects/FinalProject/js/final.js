@@ -139,5 +139,5 @@ $(document).ready(function () {
         }
     }
 
-    getPartial("homePage");
+    getPartial("home");
 })
