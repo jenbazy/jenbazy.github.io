@@ -54,7 +54,7 @@ body {
     margin: 20px;
 }
 .potImage {
-    width: 100%;
+    max-width: 100%;
 }
 .potName {
     text-align: center;
