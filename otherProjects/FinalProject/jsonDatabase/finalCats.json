@@ -1,0 +1,55 @@
+[{
+  "type": "Calico",
+  "name": "Paws",
+  "gender": "Male",
+  "image": "images/cat7.jpg",
+  "comments": [{
+    "username": "AboveAlpha",
+    "stars": 5,
+    "comment": "Loved this cat..."
+  }, {
+    "username": "BrashTaga",
+    "stars": 1,
+    "comment": "Destroyed my house"
+  }, {
+    "username": "Dragonakom",
+    "stars": 4,
+    "comment": "Pretty good kitty"
+  }]
+}, {
+  "type": "Tabby",
+  "name": "Mittens",
+  "gender": "Female",
+  "image": "images/cat5.jpg",
+  "comments": [{
+    "username": "Jubeamese",
+    "stars": 4,
+    "comment": "So cute!!!"
+  }, {
+    "username": "Pearbrai",
+    "stars": 5,
+    "comment": "Can i buy it?"
+  }, {
+    "username": "FacePriceless",
+    "stars": 5,
+    "comment": "Seriously loved her!"
+  }]
+}, {
+  "type": "Siamese",
+  "name": "Robert",
+  "gender": "Unspecified",
+  "image": "images/cat6.jpg",
+  "comments": [{
+    "username": "Ravenertu",
+    "stars": 2,
+    "comment": "Terrorized my dog!"
+  }, {
+    "username": "Roadbed",
+    "stars": 1,
+    "comment": "Meh"
+  }, {
+    "username": "Iconaler",
+    "stars": 5,
+    "comment": "Reminded me of my old cat"
+  }]
+}]
