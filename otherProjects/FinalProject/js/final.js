@@ -1,12 +1,4 @@
 $(document).ready(function () {
-    $("#submitButton").one("mouseenter", function () {
-            $("#log").append("<br>Let's make sure we have all the info we need!");
-            $(this).text("Click to Submit");
-        })
-        .one("mouseleave", function () {
-            $("#log").append("<br><br>We hope you love your item");
-            $(this).text("In the name of TEA!");
-        });
     //get all the nav li, add click event
     $(".nav").find("li").on("click", function () {
             $("#pageContent").hide().html("");
