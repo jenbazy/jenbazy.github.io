@@ -1,4 +1,5 @@
 $(document).ready(function () {
+
     //get all the nav li, add click event
     $(".nav").find("li").on("click", function () {
             $("#pageContent").hide().html("");
@@ -107,9 +108,8 @@ $(document).ready(function () {
 
         alert("Sending to database " + JSON.stringify(order));
         $("#successMsg").html("Order Received!<br/><br/>" +
-            order.potSelect + " will be delivered on " +
-            order.deliveryDate +
-            "<span class="glyphicons glyphicons-coffee-cup"></span>");
+            order.catSelect + " will be delivered on " +
+            order.deliveryDate );
 
     } //sendConfirmation
 
