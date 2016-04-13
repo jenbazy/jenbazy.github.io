@@ -98,7 +98,7 @@ $(document).ready(function () {
     function sendConfirmation() {
         //make an object to record data for database;
         var order = {};
-        //get all teh jquery objects
+        //get all the jquery objects
         var formData = $("input, select");
         //for each jquery object
         formData.each(function () {
