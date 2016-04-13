@@ -1,7 +1,10 @@
-.footCall{
+.panel{
     background-image: url(../images/dark_embroidery.png);
     color: aliceblue;
     min-height: 100px; 
+}
+.panel-body{
+    background-color: none;
 }
 
 .container{background-color:azure;}
