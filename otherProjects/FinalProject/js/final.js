@@ -117,7 +117,7 @@ $(document).ready(function () {
         $("#successMsg").html("Order Received!<br/><br/>" +
             order.potSelect + " will be delivered on " +
             order.deliveryDate +
-            "<img id='paws' src='images/catPaws.jpeg'>");
+            "<span class="glyphicons glyphicons-coffee-cup"></span>");
 
     } //sendConfirmation
 
