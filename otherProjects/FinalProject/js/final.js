@@ -109,7 +109,7 @@ $(document).ready(function () {
         alert("Sending to database " + JSON.stringify(order));
         $("#successMsg").html("Order Received!<br/><br/>" +
             order.potSelect + " will be delivered on " +
-            order.deliveryDate + '<span class="glyphicon glyphicon-leaf"></span>');
+            order.deliveryDate + " " + '<span class="glyphicon glyphicon-grain"></span>');
 
     } //sendConfirmation
 
