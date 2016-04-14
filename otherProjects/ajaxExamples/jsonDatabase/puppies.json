@@ -1,14 +1,17 @@
 [{
     "breed": "Maltese",
     "colors": "White",
-    "temperament": "Gentle & Affectionate"
-
+    "temperament": "Gentle & Affectionate",
+    "image": "../images/maltese.jpg"
+    
 }, {
     "breed": "Shiba Inu",
     "colors": "Tan, Red, Sesame",
-    "temperament": "Alert & Charming"
+    "temperament": "Alert & Charming",
+    "image": "../images/shiba.jpg"
 }, {
     "breed": "Yorkshire Terrier",
     "colors": "Multi, Brown/Black/Tan",
-    "temperament": "Playful & Intelligent"
+    "temperament": "Playful & Intelligent",
+    "image": "../images/yorkie.jpg"
 }]
