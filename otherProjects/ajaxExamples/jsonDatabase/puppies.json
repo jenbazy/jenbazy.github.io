@@ -1,7 +1,16 @@
 [{
-    "breed": "Maltese",
-    "colors": "White",
-    "image": "images/Emily_Maltese.jpg",
+    "breed": "Cast Iron",
+    "colors": "Red",
+    "name": "boo",
+    "image": "images/ironCardinal.jpg",
+    "impressions": [{
+        "username": "TeaObsessed",
+        "trainability": 5,
+        "Temperament": "Loved this pot..."
+  }, {
+        "username": "OolongLover",
+        "trainability": 5,
+        "Temperament": "Loved this pot..."
   }]
 }, {
     "breed": "Cast Iron",
