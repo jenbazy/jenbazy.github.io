@@ -68,8 +68,16 @@ $(document).ready(function () {
 
                     $('#deliveryDate').datepicker({});
 
-                    $("#submitButton").on("click", function () {
+                    $("#submitButton").one("mouseenter", function () {
+                        $("#inputLog").append("<br>button entered trigger");
+                        $(this).text("Are you ready to send?");
+                    })
+                    .one("mouseleave", function () {
+                        $("#inputLog").append("<br>button left trigger");
+                        $(this).text("Submit");
+                    });
 
+                    $("#submitButton").on("click", function () {
                             //get all empty inputs and select
                             //add error class to div container
                             $("input, select").filter(function () {
@@ -86,6 +94,7 @@ $(document).ready(function () {
                             if (errors.length < 1) {
                                 //alert("no errors");
                                 sendConfirmation();
+                                $(this).text("Received!");
                             }
 
                         }) //click
