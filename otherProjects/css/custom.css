@@ -9,4 +9,9 @@
 
 .container{background-color:azure;}
 
-.puppyPics{max-height: 100px;}
+.puppyPics{max-height: 150px;}
+
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
