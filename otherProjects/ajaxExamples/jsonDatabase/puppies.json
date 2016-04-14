@@ -2,16 +2,16 @@
     "breed": "Maltese",
     "colors": "White",
     "temperament": "Gentle & Affectionate",
-    "image": "images/maltese.jpg"
+    "image": "http://jenbazy.github.io/otherProjects/ajaxExamples/images/maltese.jpg"
     
 }, {
     "breed": "Shiba Inu",
     "colors": "Tan, Red, Sesame",
     "temperament": "Alert & Charming",
-    "image": "images/shiba.jpg"
+    "image": "http://jenbazy.github.io/otherProjects/ajaxExamples/images/shiba.jpg"
 }, {
     "breed": "Yorkshire Terrier",
     "colors": "Multi, Brown/Black/Tan",
     "temperament": "Playful & Intelligent",
-    "image": "images/yorkie.jpg"
+    "image": "http://jenbazy.github.io/otherProjects/ajaxExamples/images/yorkie.jpg"
 }]
