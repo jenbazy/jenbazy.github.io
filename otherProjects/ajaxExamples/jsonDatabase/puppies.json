@@ -1,7 +1,7 @@
 [{
     "breed": "Maltese",
     "colors": "White",
-    "image": "../images/Emily_Maltese.jpg",
+    "image": "images/Emily_Maltese.jpg",
   }]
 }, {
     "breed": "Cast Iron",
