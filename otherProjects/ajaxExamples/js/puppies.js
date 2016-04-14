@@ -6,14 +6,14 @@ $(document).ready(function () {
 
                 $.getJSON(url, function (data) {
                         var html = "<table class='table table-hover table-striped'>" +
-                            "<tr><th>Breed</th><th>Colours</th><th>Impressions</th></tr>";
+                            "<tr><th>Breed</th><th>Colours</th><th>Temperament</th></tr>";
 
                         $.each(data, function (index, item) {
 
                             html += "<tr>" +
                                 "<td>" + item.breed + "</td>" +
                                 "<td>" + item.colors + "</td>" +
-                                "<td>" + item.name + "</td>" +
+                                "<td>" + item.temperament + "</td>" +
                                 "</tr>";
                         })
 
