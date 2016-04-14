@@ -13,14 +13,7 @@ $(document).ready(function () {
             getPartial(page);
 
         }) //click
-    $("#myButton").one("mouseenter", function () {
-            $("#log").append("<br>You should definitely review");
-            $(this).text("Click to Review");
-        })
-        .one("mouseleave", function () {
-            $("#log").append("<br><br>We hope you love your item");
-            $(this).text("You're going to look great!");
-        });
+
     //get the parital via JSON, add to page, activiate associating js
     function getPartial(partial) {
 
