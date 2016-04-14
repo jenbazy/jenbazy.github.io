@@ -13,7 +13,7 @@ $(document).ready(function () {
                             html += "<tr>" +
                                 "<td>" + item.breed + "</td>" +
                                 "<td>" + item.colors + "</td>" +
-                                "<td>" + item.name + "</td>" +
+                                "<td>" + item.image + "</td>" +
                                 "</tr>";
                         })
 
