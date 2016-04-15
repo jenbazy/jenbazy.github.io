@@ -66,16 +66,37 @@ $(document).ready(function () {
 
                     $("#pageContent").html(data);
 
+                    $(".form-control").each(function () {
+                        var Input = $(this);
+                        var default_value = Input.val();
+                        Input.focus(function () {
+                            $("#inputLog").append("<br>Focus function initiated");
+                            $(this).css("background-color", "#e6ffe6");
+                            if (Input.val() == default_value) Input.val("");
+                        }).blur(function () {
+                            if (Input.val().length == 0) Input.val(default_value);
+                            $("#inputLog").append("<br>Blur function initiated");
+                        })
+                    })
+
                     $('#deliveryDate').datepicker({});
 
-                    $("#submitButton").one("mouseenter", function () {
-                        $("#inputLog").append("<br>button entered trigger");
-                        $(this).text("Are you ready to send?");
-                    })
-                    .one("mouseleave", function () {
-                        $("#inputLog").append("<br>button left trigger");
-                        $(this).text("Submit");
+                    $("#cardNumber").on("change", function () {
+
+                        var val = $(this).val();
+                        $("#log").append("<br>Is your credit card number correct?");
+                        $("#inputLog").html(val + "<br>Change function triggered.");
+
                     });
+
+                    $("#submitButton").one("mouseenter", function () {
+                            $("#inputLog").append("<br>button entered trigger");
+                            $(this).text("Have you entered all your information?");
+                        })
+                        .one("mouseleave", function () {
+                            $("#inputLog").append("<br>button left trigger");
+                            $(this).text("Submit");
+                        });
 
                     $("#submitButton").on("click", function () {
                             //get all empty inputs and select
@@ -96,6 +117,36 @@ $(document).ready(function () {
                                 sendConfirmation();
                                 $(this).text("Received!");
                             }
+                            $("#myButton").on("click", function () {
+
+                                var order = {};
+
+                                order.potSelect = $("#potSelect").val();
+                                order.deliveryDate = $("#deliveryDate").val();
+                                order.name = $("#name").val();
+                                order.cardNumber = $("#cardNumber").val();
+                                order.code = $("#securityCode").val();
+                                order.expiryMonth = $("#expirymonth").val();
+                                order.expiryYear = $("#expiryYear").val();
+                                order.address1 = $("#address1").val();
+                                order.zip = $("#zip").val();
+                                order.state = $("#state").val();
+                                order.country = $("#country").val();
+                            });
+
+                            $("#log").append("<br>You would like an item that's colour is primarily " + order.potSelect);
+                            $("#log").append("<br>In the following size: " + order.deliveryDate);
+                            $("#log").append("<br>You would describe your style as " + order.name);
+                            $("#log").append("<br>Your style is " + order.cardNumber);
+                            $("#log").append("<br>Your style is " + order.securityCode);
+                            $("#log").append("<br>Your style is " + order.expiryMonth);
+                            $("#log").append("<br>Your style is " + order.expiryYear);
+                            $("#log").append("<br>Your style is " + order.address1);
+                            $("#log").append("<br>Your style is " + order.zip);
+                            $("#log").append("<br>Your style is " + order.state);
+                            $("#log").append("<br>Your style is " + order.country);
+
+                            $("#inputLog").append("<br>Your inputs were as follows: " + JSON.stringify(order, 4));
 
                         }) //click
                 }) //get
@@ -114,6 +165,7 @@ $(document).ready(function () {
             var id = $(this).attr("id"); //get the id of the element
             order[id] = $(this).val(); //set the field and the value
         })
+
 
         alert("Sending to database " + JSON.stringify(order));
         $("#successMsg").html("Order Received!<br/><br/>" +
