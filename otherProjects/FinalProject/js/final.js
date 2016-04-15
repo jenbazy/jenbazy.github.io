@@ -84,8 +84,8 @@ $(document).ready(function () {
                     $("#cardNumber").on("change", function () {
 
                         var val = $(this).val();
-                        $("#log").append("<br>Is your credit card number correct?");
-                        $("#inputLog").html(val + "<br>Change function triggered.");
+                        $("#log").append("Please make sure your card number is correct.<br>");
+                        $("#inputLog").html("<br>Change function triggered.");
 
                     });
 
@@ -117,36 +117,29 @@ $(document).ready(function () {
                                 sendConfirmation();
                                 $(this).text("Received!");
                             }
-                            $("#myButton").on("click", function () {
+                            var order = {};
 
-                                var order = {};
+                            order.potSelect = $("#potSelect").val();
+                            order.deliveryDate = $("#deliveryDate").val();
+                            order.name = $("#name").val();
+                            order.cardNumber = $("#cardNumber").val();
+                            order.code = $("#securityCode").val();
+                            order.expiryMonth = $("#expirymonth").val();
+                            order.expiryYear = $("#expiryYear").val();
+                            order.address1 = $("#address1").val();
+                            order.zip = $("#zip").val();
+                            order.state = $("#state").val();
+                            order.country = $("#country").val();
+                            
+                            $("#log").append("<br>You ordered " + order.potSelect);
+                            $("#log").append("<br>Delivery Date: " + order.deliveryDate);
+                            $("#log").append("<br>Card Holder's Name: " + order.name);
+                            $("#log").append("<br>Card Number: " + order.cardNumber);
+                            $("#log").append("<br>Security Code: " + order.securityCode);
+                            $("#log").append("<br>Expiry Date: " + order.expiryMonth + "/" + order.expiryYear);
+                            $("#log").append("<br>Address: " + order.address1 + "<br>" + order.state + "," + order.country + "<br>" + order.zip);
 
-                                order.potSelect = $("#potSelect").val();
-                                order.deliveryDate = $("#deliveryDate").val();
-                                order.name = $("#name").val();
-                                order.cardNumber = $("#cardNumber").val();
-                                order.code = $("#securityCode").val();
-                                order.expiryMonth = $("#expirymonth").val();
-                                order.expiryYear = $("#expiryYear").val();
-                                order.address1 = $("#address1").val();
-                                order.zip = $("#zip").val();
-                                order.state = $("#state").val();
-                                order.country = $("#country").val();
-                            });
-
-                            $("#log").append("<br>You would like an item that's colour is primarily " + order.potSelect);
-                            $("#log").append("<br>In the following size: " + order.deliveryDate);
-                            $("#log").append("<br>You would describe your style as " + order.name);
-                            $("#log").append("<br>Your style is " + order.cardNumber);
-                            $("#log").append("<br>Your style is " + order.securityCode);
-                            $("#log").append("<br>Your style is " + order.expiryMonth);
-                            $("#log").append("<br>Your style is " + order.expiryYear);
-                            $("#log").append("<br>Your style is " + order.address1);
-                            $("#log").append("<br>Your style is " + order.zip);
-                            $("#log").append("<br>Your style is " + order.state);
-                            $("#log").append("<br>Your style is " + order.country);
-
-                            $("#inputLog").append("<br>Your inputs were as follows: " + JSON.stringify(order, 4));
+                            $("#inputLog").append("<br>Your inputs were as follows: " + JSON.stringify(order, null, 4));
 
                         }) //click
                 }) //get

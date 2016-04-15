@@ -87,25 +87,7 @@ $(document).ready(function () {
         $("#log").append("<br>You are interested in: " + userOrder.myCheckValues.join());
         $("#inputLog").append("Your inputs were as follows: " + JSON.stringify(userOrder));
 
-        /*
-            var myInput = $("#mySingleLineText").val();
-            var myTextarea = $("#myTextarea").val();
-            var mySelect = $("#mySelect").val();
-            var myRadio = $("[name='gender']:checked").val();
-            var myCheckValues = [];
-            //each is a jquery loop for objects/arrays
-            //each thing that is selected, do the function
-            //"this" is the element we are currently looking at
-            $("[name='vehicle']:checked").each(function() {
-              myCheckValues.push($(this).val());
-            });
-            $("#log").append("<br>User clicked the button");
-            $("#log").append("<br>Value of input is: " + myInput);
-            $("#log").append("<br>Value of textarea is: " + myTextarea);
-            $("#log").append("<br>Value of select is: " + mySelect);
-            $("#log").append("<br>Value of radio button is: " + myRadio);
-            $("#log").append("<br>Value of checks is: " + myCheckValues.join());
-        */
+       
     })
 
 
