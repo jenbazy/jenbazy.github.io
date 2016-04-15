@@ -101,6 +101,7 @@ $(document).ready(function () {
                     $("#submitButton").on("click", function () {
                             //get all empty inputs and select
                             //add error class to div container
+                            $("#inputLog").append("<br>button click trigger");
                             $("input, select").filter(function () {
                                 return !this.value;
                             }).closest("div").addClass("has-error");
